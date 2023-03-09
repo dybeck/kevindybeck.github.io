@@ -26,6 +26,7 @@ a:visited {color: white;}/* visited link */
 a:hover {color: black;}/* mouse over link */
 a:active {color: blue;}/* selected link */
 #margin-left{margin-left: 15px}
+#github-link{font-family: "Times New Roman", sans-serif}
 
 .gallery {margin: 2px;
     border: 2px solid #111;
