@@ -1,66 +1,125 @@
-@font-face {font-family: Caveat;
-    src: url(fonts/Caveat-VariableFont_wght.ttf);}
-
 body {
-    background-color: #666;
-    color: #fff;
     font-family: "Fira Sans", serif;
+    background-color: #f2f4f4;
+    /*background: rgb(105, 5, 121);*/
+    /*background: linear-gradient(90deg, rgba(20, 20, 20, 1) 0%, rgba(200, 200, 200, 1) 50%, rgba(20, 20, 20, 1) 100%);*/
+    -ms-overflow-style: none;  /* IE and Edge scrollbar removal */
+    scrollbar-width: none;  /* Firefox scrollbar removal */
+
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+}
+::-webkit-scrollbar {
+    display: none; /* Chrome scrollbar removal */
 }
 
-h1 {font-family: Caveat, sans-serif;
-    font-size: 60px;}
+article {
+    width: 80vh;
 
-h2 {font-size: 60px;}
+}
 
-ul{list-style: none;
-    margin-left: -40px}
+.content-wrapper {
+    display: grid;
+    justify-items: center;
+}
 
-article {width: 600px;}
-footer {margin-left: 15px;}
-a:link {color: white;}/* unvisited link */
-a:visited {color: white;}/* visited link */
-a:hover {color: black;}/* mouse over link */
-a:active {color: blue;}/* selected link */
-#margin-left{margin-left: 15px}
-#github-link{font-family: "Times New Roman", sans-serif}
+.intro {
+    height: 100vh;
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    /*background-color: darkblue;*/
+    font-size: x-large;
+}
+.intro-container {
+margin-left: 20%;
+}
 
-.gallery {margin: 2px;
-    border: 2px solid #111;
-    background-color: #444;
-    float: left;
-    width: 200px;
-    height: 200px;}
-.gallery:hover {border: 2px solid whitesmoke;
-    background-color: #222;}
-.gallery img {width: 80%;
-    height: 80%;
-    margin: 5px;}
-.desc-gallery {padding: 5px;
-    text-align: center;
-    color: white;}
+.name {
+    font-size: xxx-large;
+    color: darkmagenta;
+}
 
-/* top navbar */
-ol {list-style-type: none;
+.links {
+    height: 35vh;
+
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    }
+
+.link {
+    font-size: xx-large;
+    color: snow;
+    text-decoration: none;
+    max-width: 50%;
+    margin: 0 0 0;
+}
+
+.link-div {
+    margin: 1% 0 1%;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-about {
+    width: 40%;
+
+}
+
+/* resume part*/
+.history {
     margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #111;}
+    background-color: black;
+    color: snow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.topnav {float: left;
-    padding: 14px 16px;
-    text-decoration: none;}
-.topnav:hover {background-color: #aaa;
-    color: #fff;}
-.active {float: left;
-    padding: 14px 16px;
-    text-decoration: none;
-    background-color: #aaa;}
-.active-icon {float: left;
-    padding: 14px 16px;
-    text-decoration: none;
-    background-color: #aaa;}
-/* end top navbar */
+.bigger-title {
+    font-size: xxx-large;
+}
+
+.wrapper-history {
+    max-width: 40%;
+}
+
+.resume-item {
+    margin-top: 2%;
+    margin-bottom: 7%;
+}
+
+.resume-title {
+    font-weight: bold;
+}
+
+.ten-vh-divider{
+    height: 10vh;
+}
+
+.three-vh-divider {
+    height: 3vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .bigger-title{
+        font-size: x-large;
+    }
+    .wrapper-history {
+        max-width: 95%;
+    }
+    .wrapper-about {
+        width: 95%;
+    }
+}
