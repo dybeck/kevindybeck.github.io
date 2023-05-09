@@ -27,9 +27,11 @@ article {
 a:visited{
     color: white;
 }
-/*a:link*/
-/*a:hover*/
-/*a:active*/
+a:link{
+    color: white
+    }
+/*a:hover{}*/
+/*a:active{}*/
 
 
 
