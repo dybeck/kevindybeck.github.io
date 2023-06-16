@@ -33,13 +33,22 @@ a:link{
 /*a:hover{}*/
 /*a:active{}*/
 
+.wish {
+    color: black;
+}
 
+.wishlist {
+    background-color: #1a1a1a;
+}
 
 
 .content-wrapper {
+/*
     display: grid;
     justify-items: center;
+*/
 }
+
 
 
 .wrapper {
@@ -64,6 +73,17 @@ a:link{
     color: darkmagenta;
 }
 
+.header {
+    height: 60px;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+/*
+    align-items: center;
+    justify-content: center;
+*/
+}
+
 .links {
     height: 35vh;
     background-color: #1a1a1a;
@@ -80,12 +100,16 @@ a:link{
     /*border: solid white;*/
     /*background-color: white;*/
     max-width: 50%;
-    margin: 0% 0% 0%;
+    margin: 0 0 0;
     /*border-radius: 1%;*/
 }
 
 .link-div {
-    margin: 1% 0% 1%;
+    margin: 1% 0 1%;
+}
+
+.link-header {
+    margin: 1% 0.5% 0;
 }
 
 .link:hover {
