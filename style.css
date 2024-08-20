@@ -1,195 +1,105 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+:root {
+  --color-0: #000;
+  --color-1: #2a2a2a;
+  --color-2: #eee;
+  --color-accent: darkmagenta;
+}
 body {
-    font-family: "Fira Sans", serif;
-    background-color: #f2f4f4;
-    /*background: rgb(105, 5, 121);*/
-    /*background: linear-gradient(90deg, rgba(20, 20, 20, 1) 0%, rgba(200, 200, 200, 1) 50%, rgba(20, 20, 20, 1) 100%);*/
-    -ms-overflow-style: none;  /* IE and Edge scrollbar removal */
-    scrollbar-width: none;  /* Firefox scrollbar removal */
-
-    margin: auto;
-}
-::-webkit-scrollbar {
-    display: none; /* Chrome scrollbar removal */
+  font-family: "Fira Sans", serif;
+  background-color: var(--color-0);
+  color: var(--color-2);
+  margin: auto;
 }
 
-article {
-    width: 80vh;
-}
-
-/*div {}*/
-/*h1 {}*/
-/*h2 {}*/
-
-a:visited{
-    color: white;
-}
-a:link{
-    color: white
-    }
-/*a:hover{}*/
-/*a:active{}*/
-
-.wish {
-    color: black;
-}
-
-.wishlist {
-    background-color: #1a1a1a;
-}
-
-
-.content-wrapper {
-/*
-    display: grid;
-    justify-items: center;
-*/
-}
-
-
-
-.wrapper {
-
-}
+article {width: 80vh;}
 
 .intro {
-    height: 100vh;
-    width: 100%;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    /*background-color: darkblue;*/
-    font-size: x-large;
+  height: 100vh;
+  width: 100%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-size: x-large;
+  background-color: var(--color-0);
 }
-.intro-container {
-    margin-left: 20%;
-}
+.intro-container {margin-left: 20%;}
 
 .name {
-    font-size: xxx-large;
-    color: darkmagenta;
+  font-size: xxx-large;
+  color: var(--color-accent);
 }
 
 .header {
-    height: 60px;
-    background-color: #1a1a1a;
-    display: flex;
-    flex-direction: column;
-/*
-    align-items: center;
-    justify-content: center;
-*/
-}
-
-.links {
-    height: 35vh;
-    background-color: #1a1a1a;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.link {
-    font-size: xx-large;
-    color: snow;
-    text-decoration: none;
-    /*border: solid white;*/
-    /*background-color: white;*/
-    max-width: 50%;
-    margin: 0 0 0;
-    /*border-radius: 1%;*/
-}
-
-.link-div {
-    margin: 1% 0 1%;
-}
-
-.link-header {
-    margin: 1% 0.5% 0;
-}
-
-.link:hover {
-    text-decoration: underline;
+  height: 60px;
+  background-color: var(--color-2);
+  display: flex;
+  flex-direction: column;
 }
 
 .about-me {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.wrapper-about {width: 40%;}
 
-.wrapper-about {
-    width: 40%;
-
-}
-
-.point-title {
-
-}
-
-.point-text {
-
-}
-
-/* resume part*/
 .history {
-    margin: 0;
-    background-color: black;
-    color: snow;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin: 0;
+  background-color: var(--color-2);
+  color: var(--color-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bigger-title {
-
-    font-size: xxx-large;
+  font-size: xxx-large;
 }
 
 .wrapper-history {
-    max-width: 40%;
+  max-width: 40%;
 }
 
 .resume-item {
-    margin-top: 2%;
-    margin-bottom: 7%;
+  margin-top: 2%;
+  margin-bottom: 7%;
 }
 
 .resume-title {
-    font-weight: bold;
+  font-weight: bold;
 }
 
-.resume-timestamp {
-
+a:visited {color: var(--color-1);}
+a:link {color: var(--color-1);}
+.links {
+  height: 35vh;
+  background-color: var(--color-2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.resume-text {
-
+.link {
+  font-size: xx-large;
+  color: var(--color-1);
+  text-decoration: none;
+  max-width: 50%;
+  margin: 0 0 0;
 }
+.link-div {margin: 1% 0 1%;}
+.link-header {margin: 1% 0.5% 0;}
+.link:hover {text-decoration: underline;}
 
-.ten-vh-divider{
-    height: 10vh;
-}
-
-.three-vh-divider {
-    height: 3vh;
-
-}
+.ten-vh-divider {height: 10vh;}
+.three-vh-divider {height: 3vh;}
 
 @media only screen and (max-width: 600px) {
-    .bigger-title{
-        font-size: x-large;
-    }
-
-    .wrapper-history {
-        max-width: 95%;
-    }
-    .wrapper-about {
-        width: 95%;
-    }
-
+  .bigger-title {font-size: x-large;}
+  .wrapper-history {max-width: 95%;}
+  .wrapper-about {width: 95%;}
 }
+
+::-webkit-scrollbar {display: none; /* Chrome scrollbar removal */}
+body {-ms-overflow-style: none;  /* IE and Edge scrollbar removal */}
+body {scrollbar-width: none;  /* Firefox scrollbar removal */}
